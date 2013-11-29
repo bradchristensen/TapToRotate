@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <nz.co.christensen.taptorotate.FadingImageView
+        android:id="@+id/button"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:padding="@dimen/button_padding"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:id="@+id/dropzone_left"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/dropzone_left"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/dropzone_right"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/dropzone_right"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/dropzone_top"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dropzone_top"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/dropzone_bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dropzone_bottom"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"/>
+</RelativeLayout>

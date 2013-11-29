@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tap to Rotate</string>
+    
+    <string name="category_debug">Debug</string>
+    <string name="category_application">Application</string>
+    <string name="category_behaviour">Behaviour</string>
+    <string name="category_advanced">Other settings</string>
+    
+    <string name="title_enable_service">Enable service</string>
+    <string name="summary_enable_service">Enable or disable Tap to Rotate</string>
+    
+    <string name="title_start_on_boot">Start with Android</string>
+    <string name="summary_start_on_boot">Start the service when Android boots up</string>
+    
+    <string name="title_forced_fixed">Force rotation in fixed mode</string>
+    <string name="title_forced_free">Force rotation in free-rotate mode</string>
+    <string name="summary_forced">Override orientation requested by apps</string>
+    
+    <string name="title_haptic_click">Vibrate on tap</string>
+    <string name="title_haptic_longclick">Vibrate on long press</string>
+    
+    <string name="title_accelerometer_threshold">Rotation detection threshold</string>
+    
+    <string name="title_debug_azimuth">Azimuth</string>
+    <string name="title_debug_pitch">Pitch</string>
+    <string name="title_debug_roll">Roll (rotation)</string>
+    
+    <string name="title_enable_debug">Show debug information</string>
+    <string name="summary_enable_debug">Print all accelerometer data</string>
+
+</resources>

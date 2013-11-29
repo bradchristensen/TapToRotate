@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/category_application">
+        <CheckBoxPreference
+            android:key="enable_service"
+            android:summary="@string/summary_enable_service"
+            android:title="@string/title_enable_service"
+            android:disableDependentsState="false"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="start_on_boot"
+            android:summary="@string/summary_start_on_boot"
+            android:title="@string/title_start_on_boot"
+            android:dependency="enable_service"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/category_behaviour">
+        <CheckBoxPreference
+            android:key="force_rotation_fixed"
+            android:summary="@string/summary_forced"
+            android:title="@string/title_forced_fixed"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="force_rotation_free"
+            android:summary="@string/summary_forced"
+            android:title="@string/title_forced_free"
+            android:defaultValue="false" />
+        
+        <CheckBoxPreference
+            android:key="haptic_click"
+            android:title="@string/title_haptic_click"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="haptic_longclick"
+            android:title="@string/title_haptic_longclick"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/category_advanced">
+        <CheckBoxPreference
+            android:key="enable_debug"
+            android:title="@string/title_enable_debug"
+            android:summary="@string/summary_enable_debug"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/category_debug"
+        android:key="category_debug">
+        <Preference
+            android:key="debug_azimuth"
+            android:title="@string/title_debug_azimuth" />
+        <Preference
+            android:key="debug_pitch"
+            android:title="@string/title_debug_pitch" />
+        <Preference
+            android:key="debug_roll"
+            android:title="@string/title_debug_roll" />
+    </PreferenceCategory>
+        
+
+</PreferenceScreen>
